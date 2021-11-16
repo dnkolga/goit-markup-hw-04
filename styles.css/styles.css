@@ -19,6 +19,7 @@ a {
     color: inherit;
     text-decoration: none;
     font-style: normal;
+    cursor: pointer;
 }
 
 :root {
@@ -71,10 +72,11 @@ body {
 }
 .nav-list,
 .nav-contacts,
-.portfolio-menu {
+.portfolio-menu,
+.footer-box,
+.footer-soc-list {
     display: flex;
 }
-.hero,
 .footer {
     background-color: var(--gray-bg-color);
 }
@@ -145,6 +147,9 @@ body {
     padding-top: 60px;
     padding-bottom: 57px;
 }
+.footer-nav {
+    margin-right: 70px;
+}
 .footer-logo {
     display: block;
     margin-bottom: 20px;
@@ -152,6 +157,48 @@ body {
 .footer-item:not(:last-child):not(:last-child) {
     margin-bottom: 9px;
 }
+.footer-social {
+    padding-top: 12px;
+}
+.footer-soc-title {
+    color: var(--accent-color-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 0.87;
+
+    margin-bottom: 20px;
+}
+
+.footer-soc-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, .1 );
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--accent-color);
+}
+.footer-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+.inst {
+    background-image: url(../images/ficon-inst.svg);
+}
+.twit{
+    background-image: url(../images/ficon-twit.svg);
+}
+.facebook {
+    background-image: url(../images/ficon-face.svg);
+}
+.linkedin {
+    background-image: url(../images/ficon-linkedin.svg);
+}
+
 /* LOGO */
 .header-logo,
 .footer-logo {
@@ -170,6 +217,18 @@ body {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/herobgi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--gray-bg-color);
 }
 .hero-heading {
     color: var(--accent-color-white);
@@ -224,6 +283,29 @@ body {
 .advantages-item {
     width: 270px;
 }
+.advantages-item::before {
+    content: '';
+    display: block;
+    min-height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-bg-color);
+    background-size: 65px 70px;
+}
+.advantages-item:nth-child(1)::before {
+    background-image: url(../images/aicon1.svg); 
+}
+.advantages-item:nth-child(2)::before {
+    background-image: url(../images/aicon2.svg); 
+}
+.advantages-item:nth-child(3)::before {
+    background-image: url(../images/aicon3.svg); 
+}
+.advantages-item:nth-child(4)::before {
+    background-image: url(../images/aicon4.svg); 
+}
+
 /* AREA */
 .area-list,
 .team-list {
