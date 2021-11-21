@@ -144,15 +144,23 @@ body {
     display: flex;
     align-items: center;
 }
+
 .nav-item:not(:last-child),
 .nav-contacts-item:not(:last-child) {
     padding-right: 50px;
 }
+
 .nav-cont-icon {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
     fill: var(--secondary-text-color);
+}
+.nav-icon-mail {
+    width: 16px;
+    height: 12px;
+}
+.nav-icon-tel {
+    width: 10px;
+    height: 16px;
 }
 .contacts-link:hover .nav-cont-icon,
 .contacts-link:focus .nav-cont-icon {
