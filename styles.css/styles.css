@@ -98,8 +98,8 @@ body {
 .header{
     background-color: var(--accent-color-white);
     border-bottom: var(--head-border-color) 1px solid;
-    padding-top: 35px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 15px;
 }
 .nav-link {
     color: var(--primary-text-color);
@@ -150,7 +150,7 @@ body {
 }
 .nav-item:not(:last-child),
 .nav-contacts-item:not(:last-child) {
-    padding-right: 50px;
+    margin-right: 50px;
 }
 
 .nav-cont-icon {
@@ -238,6 +238,8 @@ body {
 }
 .header-logo {
     margin-right: 93px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /* HERO */
 .hero {
